@@ -16,7 +16,7 @@ app = Flask(__name__)
 bootstrap = Bootstrap(app)
 
 app.secret_key = SECRET_KEY
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@127.0.0.1:3306/todolist"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:@123.57.81.203:3306/todolist"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 
@@ -104,4 +104,4 @@ def load_user(user_id):
 
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
